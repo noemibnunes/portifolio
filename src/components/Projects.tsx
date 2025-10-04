@@ -3,6 +3,8 @@ import neobankImage from "../assets/project-neobank.jpg";
 import healthAppImage from "../assets/healthAppImage.jpg";
 import spaceFashion from "../assets/spaceFashion.jpg";
 import imusic from "../assets/imusic.jpg";
+import solarEnergy from "../assets/solarEnergy.png";
+import game from "../assets/game.png";
 
 export const Projects = () => {
   const projects = [
@@ -12,7 +14,6 @@ export const Projects = () => {
       image: healthAppImage,
       year: "2024",
       link: "https://www.behance.net/gallery/209355359/App-de-Saude-UITober2024",
-      size: "large" as const
     },
     {
       title: "Space Fashion",
@@ -29,10 +30,11 @@ export const Projects = () => {
       link: "https://www.behance.net/gallery/165977517/Streaming-de-Musica-iMusic"
     },
     {
-      title: "UI Design",
-      subtitle: "App Bestpass",
-      image: neobankImage,
-      year: "2024"
+      title: "Energia Solar",
+      subtitle: "",
+      image: solarEnergy,
+      link: "https://www.behance.net/gallery/165971441/Plataforma-de-Energia-Solar",
+      year: "2023"
     },
     {
       title: "Neobank",
@@ -41,17 +43,18 @@ export const Projects = () => {
       year: "2022"
     },
     {
-      title: "Brand Guideline",
-      subtitle: "Leme",
-      image: neobankImage,
-      year: "2024"
+      title: "Loja de Jogos",
+      subtitle: "",
+      image: game,
+      link: "https://www.behance.net/gallery/125066301/Loja-de-Jogos",
+      year: "2021"
     }
   ];
 
   return (
     <section id="projects" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
@@ -60,7 +63,6 @@ export const Projects = () => {
               image={project.image}
               year={project.year}
               link={project.link}
-              size={project.size}
             />
           ))}
         </div>
