@@ -14,10 +14,10 @@ export const Contact = () => {
           
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
             <a
-              href="mailto:caio@email.com"
+              href="mailto:caiovinicius.jrf@gmail.com"
               className="text-foreground hover:text-muted-foreground transition-colors duration-200 text-lg font-light"
             >
-              caio@email.com
+              caiovinicius.jrf@gmail.com
             </a>
             
             <div className="hidden md:block w-px h-6 bg-border"></div>
